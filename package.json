@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "lint-staged": {
-    "packages/*/src/**/*.ts,*.tsx": [
+    "packages/**/src/*.{ts,tsx}": [
       "prettier --write",
       "git add"
     ]
