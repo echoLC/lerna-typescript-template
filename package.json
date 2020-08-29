@@ -1,10 +1,12 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {},
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "lerna-changelog": "^1.0.1"
   }
 }

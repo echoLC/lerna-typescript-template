@@ -1,0 +1,34 @@
+{
+  "name": "package2",
+  "version": "0.0.1",
+  "description": "a es-module package",
+  "keywords": [
+    "es-module",
+    "typescript"
+  ],
+  "author": "luochao <luochao@yy.com>",
+  "homepage": "https://github.com/echoLC/lerna-typescript-template#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.module.js",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echoLC/lerna-typescript-template.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/echoLC/lerna-typescript-template/issues"
+  }
+}
