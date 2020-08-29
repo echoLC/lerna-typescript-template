@@ -1,16 +1,16 @@
 {
-  "name": "package2",
+  "name": "localstorage",
   "version": "0.0.1",
-  "description": "a es-module package",
+  "description": "a package",
   "keywords": [
-    "es-module",
-    "typescript"
+    "typescript",
+    "utils"
   ],
-  "author": "luochao <luochao@yy.com>",
+  "author": "luochao <651644100@qq.com>",
   "homepage": "https://github.com/echoLC/lerna-typescript-template#readme",
   "license": "ISC",
-  "main": "index.js",
-  "module": "index.module.js",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
