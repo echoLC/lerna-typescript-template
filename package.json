@@ -9,6 +9,17 @@
   "workspaces": [
     "packages/*"
   ],
+  "lint-staged": {
+    "packages/*/src/**/*.ts,*.tsx": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
     "@types/jasmine": "^3.5.14",
     "@types/jest": "^26.0.10",
@@ -23,6 +34,8 @@
   "dependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.13",
     "rollup": "^2.26.8",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
