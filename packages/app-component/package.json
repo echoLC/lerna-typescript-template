@@ -9,8 +9,8 @@
   "author": "luochao <luochao@yy.com>",
   "homepage": "https://github.com/echoLC/lerna-typescript-template#readme",
   "license": "ISC",
-  "main": "index.js",
-  "module": "index.module.js",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
@@ -32,10 +32,13 @@
     "url": "https://github.com/echoLC/lerna-typescript-template/issues"
   },
   "dependencies": {
+    "localstorage": "^0.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "jasmine": "^3.6.1"
-  }
+    "jasmine": "^3.6.1",
+    "rollup-plugin-postcss": "^3.1.6"
+  },
+  "gitHead": "0dfc8ba97d87044fd729ec1729426f028bbe45bf"
 }
