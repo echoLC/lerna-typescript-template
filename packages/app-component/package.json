@@ -40,5 +40,5 @@
     "jasmine": "^3.6.1",
     "rollup-plugin-postcss": "^3.1.6"
   },
-  "gitHead": "0dfc8ba97d87044fd729ec1729426f028bbe45bf"
+  "gitHead": "4b545beca129187adf49f2289e88729e1d87080d"
 }

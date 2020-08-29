@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/echoLC/lerna-typescript-template/issues"
   },
-  "gitHead": "0dfc8ba97d87044fd729ec1729426f028bbe45bf",
+  "gitHead": "4b545beca129187adf49f2289e88729e1d87080d",
   "devDependencies": {
     "rollup-plugin-node-resolve": "^5.2.0"
   }
