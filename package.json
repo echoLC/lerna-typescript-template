@@ -10,9 +10,9 @@
     "packages/*"
   ],
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "packages/**/src/**/*.{ts,tsx}": [
       "prettier --write",
-      "git add"
+      "eslint --fix"
     ]
   },
   "husky": {
@@ -34,6 +34,8 @@
   "dependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-react": "^7.20.6",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.13",
     "rollup": "^2.26.8",
@@ -42,6 +44,7 @@
     "rollup-plugin-node-polyfills": "^0.2.1",
     "rollup-plugin-postcss": "^3.1.6",
     "rollup-plugin-sourcemaps": "^0.6.2",
-    "rollup-plugin-typescript2": "^0.27.2"
+    "rollup-plugin-typescript2": "^0.27.2",
+    "typescript-eslint": "^0.0.1-alpha.0"
   }
 }
