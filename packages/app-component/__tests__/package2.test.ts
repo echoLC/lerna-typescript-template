@@ -1,6 +1,8 @@
 import 'jasmine'
-import package2 from '../src'
+import {
+  AppComponent
+} from '../src'
 
 describe('package2', () => {
-    it('needs tests')
+  it('needs tests')
 })

@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
 
 interface AppProps {
-  msg: string
+  name: string
 }
 
-const App: FC<AppProps> = ({ msg }) => {
+const App: FC<AppProps> = ({ name }) => {
   return (
-    <h1>hello {msg ? msg : 'react' }!</h1>
+    <h1>hello {name ? name : 'react' }!</h1>
   )
 }
 
