@@ -1,6 +1,6 @@
 {
   "name": "lc-react-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a react component",
   "keywords": [
     "es-module",
@@ -32,7 +32,7 @@
     "url": "https://github.com/echoLC/lerna-typescript-template/issues"
   },
   "dependencies": {
-    "lc-localstorage": "^0.2.1",
+    "lc-localstorage": "^0.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
