@@ -5,6 +5,11 @@
   "packages": [
     "packages/*"
   ],
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"]
+    }
+  },
   "changelog": {
     "repo": "echoLC/lerna-typescript-template",
     "labels": {

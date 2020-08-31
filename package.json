@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "lint-staged": {
-    "packages/*.{ts,tsx}": [
+    "packages/*/*.{ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ]
