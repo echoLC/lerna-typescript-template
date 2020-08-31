@@ -35,5 +35,6 @@
   "gitHead": "939c15daf211f9418506458275e957f3e2d739c3",
   "devDependencies": {
     "rollup-plugin-node-resolve": "^5.2.0"
-  }
+  },
+  "dependencies": {}
 }
