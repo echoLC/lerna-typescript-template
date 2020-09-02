@@ -1,0 +1,24 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+import AppComponent from './app-component'
+
+<Meta title="MDX/AppComponent" component={AppComponent} />
+
+# AppReactComponent
+A react component.
+
+<Canvas>
+  <Story name="AppReactComponent">
+    <div>
+      <AppComponent name="React" />
+    </div>
+  </Story>
+</Canvas>
+
+# AppVueComponent
+<Canvas>
+  <Story name="AppVueComponent">
+    <div>
+      <AppComponent name="Vue" />
+    </div>
+  </Story>
+</Canvas>

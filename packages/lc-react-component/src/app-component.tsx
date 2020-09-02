@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 export interface AppProps {
-  name: string
+  name?: string
 }
 
 const AppComponent: FC<AppProps> = ({ name }) => {
