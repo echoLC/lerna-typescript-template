@@ -1,5 +1,3 @@
 import AppComponent from './app-component'
 
-export {
-  AppComponent
-}
+export default AppComponent

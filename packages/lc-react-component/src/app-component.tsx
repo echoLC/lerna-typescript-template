@@ -1,13 +1,13 @@
 import React, { FC } from 'react'
 
-interface AppProps {
+export interface AppProps {
   name: string
 }
 
-const App: FC<AppProps> = ({ name }) => {
+const AppComponent: FC<AppProps> = ({ name }) => {
   return (
     <h1>hello {name ? name : 'react' }!</h1>
   )
 }
 
-export default App
+export default AppComponent

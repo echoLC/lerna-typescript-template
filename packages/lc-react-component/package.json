@@ -32,7 +32,6 @@
     "url": "https://github.com/echoLC/lerna-typescript-template/issues"
   },
   "dependencies": {
-    "lc-localstorage": "^0.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
