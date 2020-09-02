@@ -13,7 +13,8 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'cjs',
+      name: 'AppComponent',
+      format: 'umd',
       sourcemap: true
     },
     {

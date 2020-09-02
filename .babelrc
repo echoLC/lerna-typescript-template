@@ -1,9 +1,4 @@
 {
-  "presets": [
-    ["env", {
-      "modules": false
-    }],
-    "react"
-  ],
+  "presets": ["@babel/preset-react"],
   "plugins": ["@babel/plugin-external-helpers"]
 }
