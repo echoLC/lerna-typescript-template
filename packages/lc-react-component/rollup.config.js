@@ -1,9 +1,10 @@
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
+import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
-import sourceMaps from 'rollup-plugin-sourcemaps'
-import json from 'rollup-plugin-json'
-import nodePolyfills from 'rollup-plugin-node-polyfills'
+import babel from 'rollup-plugin-babel'
+import postcss from 'rollup-plugin-postcss'
+import resolve from '@rollup/plugin-node-resolve'
+import url from 'rollup-plugin-url'
+import external from 'rollup-plugin-peer-deps-external'
 
 const pkg = require('./package.json')
 
@@ -24,22 +25,17 @@ export default {
   watch: {
     include: 'src/**'
   },
-  // external: ['crypto-js'],
   plugins: [
-    // Allow json resolution
-    json(),
-    // Allow bundling cjs modules (unlike webpack, rollup doesn't understand cjs)
+    external(),
+    url(),
     commonjs(),
-    // Allow node_modules resolution, so you can use 'external' to control
-    // which external modules to include in the bundle
-    // https://github.com/rollup/rollup-plugin-node-resolve#usage
-    resolve({
-      preferBuiltins: true
+    postcss({
+      modules: true
     }),
-    // compile typescript
-    typescript(),
-    // Resolve source maps to the original source
-    sourceMaps(),
-    nodePolyfills()
+    babel({
+      exclude: 'node_modules/**'
+    }),
+    resolve(),
+    typescript()
   ]
 }
