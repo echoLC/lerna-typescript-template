@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import LcRcHeader from 'lc-rc-header'
 
 export interface AppProps {
   name?: string
@@ -6,7 +7,7 @@ export interface AppProps {
 
 const AppComponent: FC<AppProps> = ({ name }) => {
   return (
-    <h1>hello {name ? name : 'react' }!</h1>
+    <LcRcHeader title="react" />
   )
 }
 

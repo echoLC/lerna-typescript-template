@@ -1,16 +1,17 @@
 {
-  "name": "lc-react-component",
-  "version": "0.0.5",
-  "description": "a react component",
+  "name": "lc-rc-header",
+  "version": "0.0.1",
+  "description": "a react header component",
   "keywords": [
-    "es-module",
-    "typescript"
+    "react",
+    "component",
+    "header"
   ],
   "author": "luochao <luochao@yy.com>",
   "homepage": "https://github.com/echoLC/lerna-typescript-template#readme",
   "license": "ISC",
-  "main": "dist/index.js",
-  "module": "dist/index.module.js",
+  "main": "dist/lc-rc-header.js",
+  "module": "dist/lc-rc-header.module.js",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
@@ -26,19 +27,13 @@
     "url": "git+https://github.com/echoLC/lerna-typescript-template.git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/echoLC/lerna-typescript-template/issues"
   },
   "dependencies": {
-    "lc-rc-header": "^0.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "jasmine": "^3.6.1",
-    "rollup-plugin-postcss": "^3.1.6"
-  },
-  "gitHead": "939c15daf211f9418506458275e957f3e2d739c3"
+  }
 }
