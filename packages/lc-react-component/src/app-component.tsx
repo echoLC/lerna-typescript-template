@@ -7,7 +7,7 @@ export interface AppProps {
 
 const AppComponent: FC<AppProps> = ({ name }) => {
   return (
-    <LcRcHeader title="react" />
+    <LcRcHeader title={name} />
   )
 }
 
