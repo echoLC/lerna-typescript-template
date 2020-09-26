@@ -10,14 +10,14 @@
   "author": "luochao <luochao@yy.com>",
   "homepage": "https://github.com/echoLC/lerna-typescript-template#readme",
   "license": "ISC",
-  "main": "dist/lc-rc-header.js",
-  "module": "dist/lc-rc-header.module.js",
+  "main": "build/lc-rc-header.js",
+  "module": "build/lc-rc-header.module.js",
   "directories": {
-    "lib": "dist",
+    "lib": "build",
     "test": "__tests__"
   },
   "files": [
-    "dist"
+    "build"
   ],
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
@@ -27,7 +27,9 @@
     "url": "git+https://github.com/echoLC/lerna-typescript-template.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "babel --root-mode upward src --out-dir build --extensions \".ts,.tsx\" --source-maps inline",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "bugs": {
     "url": "https://github.com/echoLC/lerna-typescript-template/issues"

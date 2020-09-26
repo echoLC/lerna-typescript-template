@@ -8,7 +8,9 @@
     "publish": "lerna publish",
     "dev": "start-storybook -p 5555",
     "prettier": "prettier --write \"**/*.{ts,tsx,json,js}\"",
-    "build": "lerna exec --parallel -- 'rollup -c=rollup.config.js'"
+    "build": "lerna exec --parallel -- 'rollup -c=rollup.config.js'",
+    "build:babel": "lerna run build --stream --parallel",
+    "build:types": "lerna run build:types --stream --parallel"
   },
   "workspaces": [
     "packages/*"
@@ -28,8 +30,12 @@
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.5",
     "@babel/plugin-external-helpers": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-flow-strip-types": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@storybook/addon-docs": "^6.0.21",
     "@storybook/addon-info": "^5.3.21",
@@ -40,6 +46,7 @@
     "@types/react": "^16.9.48",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-react-transform": "^3.0.0",
+    "babel-preset-react-app": "^9.1.2",
     "eslint-config-standard-react": "^9.2.0",
     "eslint-plugin-react": "^7.20.6",
     "husky": "^4.2.5",

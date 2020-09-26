@@ -1,4 +1,11 @@
 {
-  "presets": ["@babel/preset-react"],
-  "plugins": ["@babel/plugin-external-helpers"]
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-external-helpers", 
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-flow-strip-types"
+  ]
 }

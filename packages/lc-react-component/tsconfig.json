@@ -10,12 +10,14 @@
     "jsx": "react",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "dist"
   },
   "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "build",
+    "dist",
     "__tests__"
   ]
 }
